@@ -96,34 +96,34 @@
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
-        <Border Grid.Column="1" Grid.Row="1" Background="#292929" Width="320" HorizontalAlignment="Right">
+        <Border Grid.Column="1" Grid.Row="1" Background="#4B4643" Width="320" HorizontalAlignment="Right">
             <StackPanel>
                 <TextBlock Text="Cartão de Crédito"
                            FontSize="22" 
-                           Foreground="#ffd700"
+                           Foreground="#F1C40F"
                            Margin="72 100 0 0"
                            FontWeight="SemiBold"
                 />
                 <TextBlock Text="Selecione a bandeira" Foreground="White" Margin="72 70 0 0"/>
                 <TextBlock Text="Número do Cartão" Foreground="White" Margin="72 50 0 0"/>
-                <TextBox Width="180" Text="{Binding Pedido.NumeroCartao}"/>
+                <TextBox Width="180" Text="{Binding Pedido.NumeroCartao}" Foreground="White" BorderBrush="White"/>
                 <StackPanel Orientation="Horizontal">
                     <StackPanel Margin="72 50 0 0">
                         <TextBlock Text="Data de validade" Foreground="White"/>
-                        <DatePicker Width="100" SelectedDate="{Binding Pedido.DataValidade}"/>
+                        <DatePicker Width="100" SelectedDate="{Binding Pedido.DataValidade}" Foreground="White" BorderBrush="White"/>
                     </StackPanel>
                     <StackPanel Margin="28 50 0 0">
                         <TextBlock Text="CVV" Foreground="White"/>
-                        <TextBox Width="50" Text="{Binding Pedido.CVV}"/>
+                        <TextBox Width="50" Text="{Binding Pedido.CVV}" Foreground="White" BorderBrush="White"/>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
         </Border>
         <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right">
-            <Button BorderBrush="#ffd700"
+            <Button BorderBrush="#F1C40F"
                     Content="Finalizar"
                     FontWeight="Regular"
-                    Background="#ffd700"
+                    Background="#F1C40F"
                     Foreground="#292929"
                     Height="50" Width="320"
                     CommandParameter="{Binding}"
